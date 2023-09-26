@@ -3,31 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-    
-    const adversario = prompt("ingrese un personaje ")
-
-    const COMIDAS = {
-        'pollo':'Broster',
-        carne :'Frita',
-        papas :'Ahí jue',
-        arroz:'Sisas'
-    }
-    const COMIDA= 'NO HAY'
-
-    const NO = COMIDAS [adversario]
-
-    document.write(NO)
-    
-
-
-
-    </script>
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Formulario</title>
 </head>
 <body>
+    <div class="container">
+        <form id="myForm">
+            <h2>Formulario de Registro</h2>
 
-    
+            <div class="input-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
 
+            <div class="input-group">
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="numero" name="numero" placeholder="Numero">
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="correo" name="correo" placeholder="@email.com">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña">
+            </div>
+
+            
+
+            <button type="button" id="loginBtn">Login</button>
+            <button type="button" id="registroBtn">Registrarse</button>
+        </form>
+    </div>
+
+    <script src="Formulario.js"></script>
 </body>
 </html>
